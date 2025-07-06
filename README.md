@@ -104,7 +104,7 @@ Alternatively, you can use the following commands to activate the UI interface f
 conda activate omniglue
 python main.py
 ```
-Here is a demo video: [[OmniVerify-Nexus demo]](https://www.bilibili.com/video/BV1t83BziEyw/?vd_source=f7437a693bbdac0008462a64ef601912)
+Here is a demo video: [[OmniVerify-Nexus demo]](https://www.bilibili.com/video/BV1t83BziEyw/?vd_source=f7437a693bbdac0008462a64ef601912). Or you can find it at:  res/demo.mp4.
 
 
 
