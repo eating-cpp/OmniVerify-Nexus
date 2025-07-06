@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>takephoto</class>
+ <widget class="QWidget" name="takephoto">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>慧眼鉴真(拍照界面)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/logo.png</normaloff>icon/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(243,243,243);
+border-color:rgb(144,167,164);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>44</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>44</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(44,44,44);
+	background-color: rgb(251,251,251);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font: 11pt &quot;微软雅黑&quot;;
+	border:1.5px solid rgb(232,232,232);
+}
+QPushButton:hover{
+	background-color:rgb(237,237,237)
+}
+QPushButton:pressed,QPushButton:checked
+{
+	border-left: 3px outset rgb(58,104,76);
+	background-color:rgb(234,234,234)
+}</string>
+            </property>
+            <property name="text">
+             <string>选择文件夹</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(44,44,44);
+	background-color: rgb(251,251,251);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font: 11pt &quot;微软雅黑&quot;;
+	border:1.5px solid rgb(232,232,232);
+}
+QPushButton:hover{
+	background-color:rgb(237,237,237)
+}
+QPushButton:pressed,QPushButton:checked
+{
+	border-left: 3px outset rgb(58,104,76);
+	background-color:rgb(234,234,234)
+}</string>
+            </property>
+            <property name="text">
+             <string>拍照</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>509</width>
+           <height>389</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:10px;
+background-color:rgb(251,251,251);
+border-bottom:1.5px solid rgb(231,231,231);
+border:1.5px solid rgb(231,231,231)</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	color: rgb(44,44,44);
+	background-color: rgb(251,251,251);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font: 11pt &quot;微软雅黑&quot;;
+	border:1.5px solid rgb(232,232,232);
+}
+QPushButton:hover{
+	background-color:rgb(237,237,237)
+}
+QPushButton:pressed,QPushButton:checked
+{
+	border-left: 3px outset rgb(58,104,76);
+	background-color:rgb(234,234,234)
+}</string>
+               </property>
+               <property name="text">
+                <string>重新拍摄</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="minimumSize">
+                <size>
+                 <width>281</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	color: rgb(44,44,44);
+	background-color: rgb(251,251,251);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font: 11pt &quot;微软雅黑&quot;;
+	border:1.5px solid rgb(232,232,232);
+}
+QPushButton:hover{
+	background-color:rgb(237,237,237)
+}
+QPushButton:pressed,QPushButton:checked
+{
+	border-left: 3px outset rgb(58,104,76);
+	background-color:rgb(234,234,234)
+}</string>
+               </property>
+               <property name="text">
+                <string>开始预处理</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QGraphicsView" name="photo1">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGraphicsView" name="photo2">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QGraphicsView" name="photo3">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGraphicsView" name="photo4">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QGraphicsView" name="photo5">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QGraphicsView" name="photo6">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGraphicsView" name="photo7">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QGraphicsView" name="photo8">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QGraphicsView" name="photo9">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QGraphicsView" name="photo10">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QGraphicsView" name="photo11">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QGraphicsView" name="photo12">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>91</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGraphicsView{
+background-color: rgb(251,251,251);
+border-radius: 10px;
+border:1.5px solid rgb(232,232,232);
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

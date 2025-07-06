@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>655</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>慧眼鉴真(运行提示)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/logo.png</normaloff>icon/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(243,243,243);
+border-color:rgb(144,167,164);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="cmdButton">
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;微软雅黑&quot;;
+background-color:rgb(251,251,251);
+color:rgb(41,41,41);
+border-radius:10px;
+border-bottom:1.5px solid rgb(231,231,231)</string>
+       </property>
+       <property name="text">
+        <string>运行提示</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="CmdShow">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(251,251,251);
+border-radius:10px;
+color:rgb(58,104,76);
+border:1.5px solid rgb(231,231,231);</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

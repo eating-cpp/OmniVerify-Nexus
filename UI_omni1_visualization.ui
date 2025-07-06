@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>956</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>慧眼鉴真(可视化匹配)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/logo.png</normaloff>icon/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(243,243,243);
+border-color:rgb(144,167,164);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QWidget" name="sideBar" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	background-color: rgb(251,251,251);
+	border-radius:10px;
+	border-bottom:2px solid rgb(232,232,232);
+	border-left:3px solid rgb(232,232,232);
+}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QToolButton" name="Order1_bar">
+            <property name="styleSheet">
+             <string notr="true">/* 默认 */
+QToolButton{   
+	border-top: 3px outset transparent;
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;
+    min-height: 80px;
+	background-color: rgb(251,251,251);
+	color: rgb(44,44,44);
+	font: 11pt &quot;微软雅黑&quot;;
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(246,246,246);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(58,104,76);
+	background-color: rgb(234,234,234);
+	color:rgb(44,44,44);
+}
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>置信度分布</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/图表-折线图.png</normaloff>icon/图表-折线图.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="toolButtonStyle">
+             <enum>Qt::ToolButtonTextUnderIcon</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="Order2_bar">
+            <property name="minimumSize">
+             <size>
+              <width>86</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/* 默认 */
+QToolButton{   
+	border-top: 3px outset transparent;
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;
+    min-height: 80px;
+	background-color: rgb(251,251,251);
+	color: rgb(44,44,44);
+	font: 11pt &quot;微软雅黑&quot;;
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(237,237,237);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(58,104,76);
+	background-color: rgb(234,234,234);
+	color:rgb(44,44,44);
+}
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>可视化匹配</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/可视化.png</normaloff>icon/可视化.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="toolButtonStyle">
+             <enum>Qt::ToolButtonTextUnderIcon</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="Order4_bar">
+            <property name="minimumSize">
+             <size>
+              <width>86</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/* 默认 */
+QToolButton{   
+	border-top: 3px outset transparent;
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;
+    min-height: 80px;
+	background-color: rgb(251,251,251);
+	color: rgb(44,44,44);
+	font: 11pt &quot;微软雅黑&quot;;
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(246,246,246);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(58,104,76);
+	background-color: rgb(234,234,234);
+	color:rgb(44,44,44);
+}
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>置信度分析</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/分析.png</normaloff>icon/分析.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="toolButtonStyle">
+             <enum>Qt::ToolButtonTextUnderIcon</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 14pt &quot;微软雅黑&quot;;
+color: rgb(41,41,41);</string>
+           </property>
+           <property name="text">
+            <string>置信度分布图</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(251,251,251);
+border-radius:10px;
+border:1.5px solid rgb(232,232,232)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 14pt &quot;微软雅黑&quot;;
+color: rgb(41,41,41);</string>
+           </property>
+           <property name="text">
+            <string>可视化匹配</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_4">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+color: rgb(41,41,41);</string>
+                </property>
+                <property name="text">
+                 <string>系统认为正确匹配的文件名称：</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="minimumSize">
+              <size>
+               <width>800</width>
+               <height>500</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(251,251,251);
+border-radius:10px;
+border:1.5px solid rgb(231,231,231);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(41,41,41);
+font: 14pt &quot;微软雅黑&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>置信度选择：</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>353</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="2">
+               <widget class="QSlider" name="horizontalSlider">
+                <property name="minimumSize">
+                 <size>
+                  <width>261</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>1000</number>
+                </property>
+                <property name="pageStep">
+                 <number>1000</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QPushButton" name="pushButton">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	color: rgb(44,44,44);
+	background-color: rgb(251,251,251);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font: 11pt &quot;微软雅黑&quot;;
+	border:1.5px solid rgb(232,232,232);
+}
+QPushButton:hover{
+	background-color:rgb(237,237,237)
+}
+QPushButton:pressed,QPushButton:checked
+{
+	border-left: 3px outset rgb(58,104,76);
+	background-color:rgb(234,234,234)
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_3">
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="1" column="0">
+          <widget class="QFrame" name="frame_4">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="1" column="0">
+             <widget class="QTextEdit" name="textEdit">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color:rgb(251,251,251);
+border-radius:10px;
+color:rgb(58,104,76);
+border:1.5px solid rgb(231,231,231);
+font: 12pt &quot;微软雅黑&quot;;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">font: 14pt &quot;微软雅黑&quot;;
+color: rgb(41,41,41);</string>
+           </property>
+           <property name="text">
+            <string>置信度分析</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
