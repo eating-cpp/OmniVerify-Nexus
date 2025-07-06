@@ -21,9 +21,8 @@ We hereby declare that our project is developed using the publicly available mod
 <br>
 
 ![og_diagram.png](res/og_diagram.png "og_diagram.png")
-<div style="text-align: center;">
-    <img src="res/readme封面.png" alt="og_diagram.png" width="400" height="auto">
-</div>
+
+
 
 **Introduction**  
 Aiming at the counterfeiting problem in the Jun porcelain industry of Shenhou Town, Yuzhou, Henan, which causes annual losses exceeding 20 million yuan, our team has developed an intelligent anti-counterfeiting system for Jun porcelain based on the OmniGlue algorithm (2024 CVPR). Traditional manual identification relies on microscopic features such as glaze crazing patterns and "earthworm walking mud" patterns, suffering from defects like low efficiency and strong subjectivity.
@@ -108,7 +107,7 @@ Here is a demo video:
 
 <div style="text-align: center;">
     <video width="384" height="216" controls>
-        <source src="./res/慧眼鉴真演示.mp4" type="video/mp4">
+        <source src="./res/demo.mp4" type="video/mp4">
         您的浏览器不支持视频播放。
     </video>
 </div>
