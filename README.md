@@ -20,7 +20,8 @@ We hereby declare that our project is developed using the publicly available mod
 
 <br>
 
-![og_diagram.png](res/og_diagram.png "og_diagram.png")
+![og_diagram.png](./icon/og_diagram.png "og_diagram.png")
+![OmniVerify-Nexus.png](./icon/readme_logo.png "OmniVerify-Nexus.png")
 
 
 
@@ -37,7 +38,7 @@ First, use pip to install `omniglue`:
 conda create -n omniglue pip
 conda activate omniglue
 
-git clone https://github.com/google-research/omniglue.git
+git clone https://github.com/google-research/omgitniglue.
 cd omniglue
 pip install -e .
 ```
@@ -83,7 +84,7 @@ You will see the following expected output:
 
 ```sh
 > 加载 OmniGlue（及其子模块：SuperPoint 和 DINOv2）...
->       耗时 10.484333753585815 秒。
+>       耗时 XXXX 秒。
 
 > 欢迎使用OMNI.py!
 
@@ -103,12 +104,7 @@ Alternatively, you can use the following commands to activate the UI interface f
 conda activate omniglue
 python main.py
 ```
-Here is a demo video: 
+Here is a demo video: [[OmniVerify-Nexus demo]](https://www.bilibili.com/video/BV1t83BziEyw/?vd_source=f7437a693bbdac0008462a64ef601912)
 
-<div style="text-align: center;">
-    <video width="384" height="216" controls>
-        <source src="./res/demo.mp4" type="video/mp4">
-        您的浏览器不支持视频播放。
-    </video>
-</div>
+
 
