@@ -15,7 +15,7 @@
 <div align="center">
 We hereby declare that our project is developed using the publicly available model Omniglue from a 2024 CVPR paper.
 
-[[The original project Omniglue]](https://blog.csdn.net/qq_37080185/article/details/121616507)
+[[The original project Omniglue]]((https://github.com/google-research/omniglue))
 </div>
 
 <br>
